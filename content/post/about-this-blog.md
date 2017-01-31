@@ -1,14 +1,16 @@
 +++
-date = "2017-01-29T21:37:12-05:00"
+date = "2017-01-30T21:37:12-05:00"
 title = "about this blog"
 draft = false
 author = "me"
 
 +++
 
-I finally set up my blog after thinking about it for a while. It was easy and cheap to do using the instructions on [Superfluous Sextant](http://superfluoussextant.com/how-to-make-blog.html). On the technical side, I decided to use [Hugo](http://www.gohugo.io) instead of a Python static site generator[^hugo], even though I am a big fan of Python.
+I finally set up my blog after thinking about it for a while. It was easy and cheap thanks to the instructions on [Superfluous Sextant](http://superfluoussextant.com/how-to-make-blog.html). On the technical side, I decided to use [Hugo](http://www.gohugo.io) instead of a Python static site generator[^hugo], even though I am a big fan of Python.
 
-I started this blog in order to write about programming, data analysis, finance[^finance], sports, interesting articles, books I am reading, and whatever else comes to mind.[^politics] One of the models for this blog is [Daring Fireball](daringfireball.net). I like how Gruber links to stories and offers plenty of snark and also writes longer opinion pieces.[^sears]
+I started this blog in order to write about programming, data analysis, finance[^finance], sports, interesting articles, books I am reading, and whatever else comes to mind.[^politics] The name of the blog (undervalued) comes from my love of researching stocks and hopefully finding undervalued companies. I am a hobbyist deep value investor and contrarian.
+
+One of the models for this blog is [Daring Fireball](daringfireball.net). I like how Gruber links to stories, offers plenty of snark, and also writes longer opinion pieces.[^sears]
 
 
 ### Footnotes

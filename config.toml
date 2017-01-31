@@ -1,3 +1,16 @@
 languageCode = "en-us"
-title = "undervalued blog"
-baseurl = "http://undervaluedblog.com"
+title = "Undervalued"
+baseurl = "http://undervaluedblog.com/"
+copyright = "(C) 2017"
+paginate = 5
+
+[permalinks]
+	post="/:year/:month/:title/"
+	page="/:slug/"
+
+[params]
+	author = "me"
+	
+[params.sidebar]
+	about = "A blog about programming and finance, but not financial programming."
+	
