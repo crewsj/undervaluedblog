@@ -1,37 +1,28 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>undervalued blog</title>
+    <title>Undervalued</title>
     <link>http://undervaluedblog.com/index.xml</link>
-    <description>Recent content on undervalued blog</description>
+    <description>Recent content on Undervalued</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 30 Jan 2017 12:19:44 -0500</lastBuildDate>
+    <copyright>(C) 2017</copyright>
+    <lastBuildDate>Mon, 30 Jan 2017 21:37:12 -0500</lastBuildDate>
     <atom:link href="http://undervaluedblog.com/index.xml" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Disclaimer</title>
-      <link>http://undervaluedblog.com/Disclaimer/</link>
-      <pubDate>Mon, 30 Jan 2017 12:19:44 -0500</pubDate>
-      
-      <guid>http://undervaluedblog.com/Disclaimer/</guid>
-      <description>&lt;p&gt;I am not a financial expert or licensed in any way to give financial advice. The opinions expressed here are solely my own and should not be taken as financial advice. Consult a professional (ideally one with fiduciary duty to you) before making financial decisisions.&lt;/p&gt;
-
-&lt;p&gt;Please send any corrections or errors to undervaluedblog [at] gmail.com.&lt;/p&gt;
-</description>
-    </item>
-    
-    <item>
       <title>about this blog</title>
-      <link>http://undervaluedblog.com/post/about-this-blog/</link>
-      <pubDate>Sun, 29 Jan 2017 21:37:12 -0500</pubDate>
+      <link>http://undervaluedblog.com/2017/01/about-this-blog/</link>
+      <pubDate>Mon, 30 Jan 2017 21:37:12 -0500</pubDate>
       
-      <guid>http://undervaluedblog.com/post/about-this-blog/</guid>
+      <guid>http://undervaluedblog.com/2017/01/about-this-blog/</guid>
       <description>
 
 &lt;p&gt;I finally set up my blog after thinking about it for a while. It was easy and cheap thanks to the instructions on &lt;a href=&#34;http://superfluoussextant.com/how-to-make-blog.html&#34;&gt;Superfluous Sextant&lt;/a&gt;. On the technical side, I decided to use &lt;a href=&#34;http://www.gohugo.io&#34;&gt;Hugo&lt;/a&gt; instead of a Python static site generator&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:hugo&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:hugo&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, even though I am a big fan of Python.&lt;/p&gt;
 
-&lt;p&gt;I started this blog in order to write about programming, data analysis, finance&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:finance&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:finance&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, sports, interesting articles, books I am reading, and whatever else comes to mind.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:politics&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:politics&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; One of the models for this blog is &lt;a href=&#34;daringfireball.net&#34;&gt;Daring Fireball&lt;/a&gt;. I like how Gruber links to stories and offers plenty of snark and also writes longer opinion pieces.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:sears&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:sears&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;I started this blog in order to write about programming, data analysis, finance&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:finance&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:finance&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, sports, interesting articles, books I am reading, and whatever else comes to mind.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:politics&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:politics&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; The name of the blog (undervalued) comes from my love of researching stocks and hopefully finding undervalued companies. I am a hobbyist deep value investor and contrarian.&lt;/p&gt;
+
+&lt;p&gt;One of the models for this blog is &lt;a href=&#34;daringfireball.net&#34;&gt;Daring Fireball&lt;/a&gt;. I like how Gruber links to stories, offers plenty of snark, and also writes longer opinion pieces.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:sears&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:sears&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
@@ -49,6 +40,18 @@
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:sears&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Disclaimer</title>
+      <link>http://undervaluedblog.com/Disclaimer/</link>
+      <pubDate>Mon, 30 Jan 2017 12:19:44 -0500</pubDate>
+      
+      <guid>http://undervaluedblog.com/Disclaimer/</guid>
+      <description>&lt;p&gt;I am not a financial expert or licensed in any way to give financial advice. The opinions expressed here are solely my own and should not be taken as financial advice. Consult a professional (ideally one with fiduciary duty to you) before making financial decisisions.&lt;/p&gt;
+
+&lt;p&gt;Please send any corrections or errors to undervaluedblog [at] gmail.com.&lt;/p&gt;
 </description>
     </item>
     
