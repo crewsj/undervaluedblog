@@ -3,8 +3,6 @@ date = "2017-01-30T21:37:12-05:00"
 title = "about this blog"
 draft = false
 author = "me"
-tags = ["temp"]
-categories = ["blog"]
 +++
 
 I finally set up my blog after thinking about it for a while. It was easy and cheap thanks to the instructions on [Superfluous Sextant](http://superfluoussextant.com/how-to-make-blog.html). On the technical side, I decided to use [Hugo](http://www.gohugo.io) instead of a Python static site generator[^hugo], even though I am a big fan of Python.
