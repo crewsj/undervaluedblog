@@ -6,7 +6,7 @@
     <description>Recent content in Posts on Undervalued</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <copyright>(C) 2017</copyright>
+    <copyright>(c) 2017</copyright>
     <lastBuildDate>Mon, 30 Jan 2017 21:37:12 -0500</lastBuildDate>
     <atom:link href="http://undervaluedblog.com/post/index.xml" rel="self" type="application/rss+xml" />
     
@@ -22,7 +22,7 @@
 
 &lt;p&gt;I started this blog in order to write about programming, data analysis, finance&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:finance&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:finance&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;, sports, interesting articles, books I am reading, and whatever else comes to mind.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:politics&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:politics&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; The name of the blog (undervalued) comes from my love of researching stocks and hopefully finding undervalued companies. I am a hobbyist deep value investor and contrarian.&lt;/p&gt;
 
-&lt;p&gt;One of the models for this blog is &lt;a href=&#34;daringfireball.net&#34;&gt;Daring Fireball&lt;/a&gt;. I like how Gruber links to stories, offers plenty of snark, and also writes longer opinion pieces.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:sears&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:sears&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
+&lt;p&gt;One of the models for this blog is &lt;a href=&#34;http://daringfireball.net&#34;&gt;Daring Fireball&lt;/a&gt;. I like how Gruber links to stories, offers plenty of snark, and also writes longer opinion pieces.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:sears&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:sears&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;&lt;/p&gt;
 
 &lt;h3 id=&#34;footnotes&#34;&gt;Footnotes&lt;/h3&gt;
 &lt;div class=&#34;footnotes&#34;&gt;
@@ -32,9 +32,9 @@
 &lt;ol&gt;
 &lt;li id=&#34;fn:hugo&#34;&gt;The suggestion for using Hugo also came &lt;a href=&#34;http://superfluoussextant.com/&#34;&gt;Superfluous Sextant&lt;/a&gt;.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:hugo&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:finance&#34;&gt;Usual disclaimer here&amp;hellip; I am not a financial expert or licensed in any way to give financial advice. The opinions expressed here are solely my own and should not be taken as financial advice. Consult a professional (ideally one with fiduciary duty to you) before making financial decisisions.
+&lt;li id=&#34;fn:finance&#34;&gt;Usual disclaimer here&amp;hellip; I am not a financial expert or licensed in any way to give financial advice. The opinions expressed here are solely my own and should not be taken as financial advice. Consult a professional (ideally one with fiduciary duty to you) before making financial decisions.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:finance&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;li id=&#34;fn:politics&#34;&gt;I am still undecided about political writing on here. Although &lt;a href=&#34;https://blog.codinghorror.com/im-loyal-to-nothing-except-the-dream/&#34;&gt;more&lt;/a&gt; and &lt;a href=&#34;http://avc.com/2017/01/make-america-hate-again/&#34;&gt;more&lt;/a&gt; and &lt;a href=&#34;daringfireball.net&#34;&gt;more&lt;/a&gt; technical people are writing about political issues. I would highly recommend &lt;a href=&#34;https://blog.codinghorror.com/im-loyal-to-nothing-except-the-dream/&#34;&gt;Jeff Atwood&amp;rsquo;s post&lt;/a&gt; since it kind of mirrors my thinking.
+&lt;li id=&#34;fn:politics&#34;&gt;I am still undecided about political writing on here. Although &lt;a href=&#34;https://blog.codinghorror.com/im-loyal-to-nothing-except-the-dream/&#34;&gt;more&lt;/a&gt; and &lt;a href=&#34;http://avc.com/2017/01/make-america-hate-again/&#34;&gt;more&lt;/a&gt; and &lt;a href=&#34;http://daringfireball.net&#34;&gt;more&lt;/a&gt; technical people are writing about political issues. I would highly recommend &lt;a href=&#34;https://blog.codinghorror.com/im-loyal-to-nothing-except-the-dream/&#34;&gt;Jeff Atwood&amp;rsquo;s post&lt;/a&gt; since it kind of mirrors my thinking.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:politics&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:sears&#34;&gt;I have always wanted to point out how ridiculous it is that &lt;a href=&#34;https://www.bloomberg.com/news/articles/2014-09-15/sears-borrows-400-million-from-lampert-s-esl-investments&#34;&gt;accepting a loan&lt;/a&gt; from your CEO is a sign of trouble when &lt;a href=&#34;https://www.bloomberg.com/news/articles/2014-03-24/lampert-stops-buying-sears-ious-as-cash-burns-corporate-finance&#34;&gt;not accepting a loan&lt;/a&gt; was also a sign of trouble 6 months earlier. Sears has plenty of problems, but my point is that the financial press (even publications I respect like Bloomberg) often look for correlations where there are none.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:sears&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;

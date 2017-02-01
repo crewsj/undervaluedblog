@@ -7,12 +7,45 @@
   </url>
   
   <url>
-    <loc>http://undervaluedblog.com/Disclaimer/</loc>
+    <loc>http://undervaluedblog.com/about/</loc>
     <lastmod>2017-01-30T12:19:44-05:00</lastmod>
   </url>
   
   <url>
+    <loc>http://undervaluedblog.com/disclaimer/</loc>
+    <lastmod>2017-01-30T12:19:44-05:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>http://undervaluedblog.com/categories/blog/</loc>
+    <lastmod>2017-01-30T21:37:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://undervaluedblog.com/categories/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://undervaluedblog.com/page/</loc>
+    <lastmod>2017-01-30T12:19:44-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://undervaluedblog.com/post/</loc>
+    <lastmod>2017-01-30T21:37:12-05:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://undervaluedblog.com/tags/</loc>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://undervaluedblog.com/tags/temp/</loc>
     <lastmod>2017-01-30T21:37:12-05:00</lastmod>
     <priority>0</priority>
   </url>
