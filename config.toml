@@ -9,21 +9,21 @@ paginate = 5
 
 [[menu.main]]
     name = "Home"
-    weight = -110
+    weight = -140
     identifier = "home"
     url = "/"
 	
 [[menu.main]]
     name = "About"
-    weight = -100
+    weight = -130
     identifier = "about"
     url = "/about/"
 	
 [[menu.main]]
-    name = "Disclaimeer"
-    weight = -90
+    name = "Disclaimer"
+    weight = -120
     identifier = "disclaimer"
-    url = "/Disclaimer/"
+    url = "/disclaimer/"
 
 [permalinks]
 	post="/:year/:month/:title/"
