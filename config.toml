@@ -1,8 +1,29 @@
 languageCode = "en-us"
 title = "Undervalued"
 baseurl = "http://undervaluedblog.com/"
-copyright = "(C) 2017"
 paginate = 5
+
+[taxonomies]
+	tag = "tags"
+	category = "categories"
+
+[[menu.main]]
+    name = "Home"
+    weight = -110
+    identifier = "home"
+    url = "/"
+	
+[[menu.main]]
+    name = "About"
+    weight = -100
+    identifier = "about"
+    url = "/about/"
+	
+[[menu.main]]
+    name = "Disclaimeer"
+    weight = -90
+    identifier = "disclaimer"
+    url = "/Disclaimer/"
 
 [permalinks]
 	post="/:year/:month/:title/"
@@ -10,7 +31,26 @@ paginate = 5
 
 [params]
 	author = "me"
-	
-[params.sidebar]
-	about = "A blog about programming and finance, but not financial programming."
-	
+	# Show a sidebar menu
+    showRightSidebar = true
+    home = "undervalued"
+	# BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
+	BrandImage = ""
+
+
+[params.theme]
+  #name = "spacelab"
+  # name = "slate"
+  # name = "superhero"
+  name = "yeti"
+  
+[params.widgets]
+  recent_articles = true
+  categories = true
+  tags = true
+  
+[Languages]
+	[Languages.en]
+	weight = 1
+	copyright = "(c) 2017"
+	title = "Undervalued"
