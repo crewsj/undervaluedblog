@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Books on Undervalued</title>
+    <link>http://undervaluedblog.com/tags/books/index.xml</link>
+    <description>Recent content in Books on Undervalued</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>(c) 2017</copyright>
+    <atom:link href="http://undervaluedblog.com/tags/books/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>The Undoing Project</title>
+      <link>http://undervaluedblog.com/2017/02/the-undoing-project/</link>
+      <pubDate>Sat, 04 Feb 2017 21:35:41 -0500</pubDate>
+      
+      <guid>http://undervaluedblog.com/2017/02/the-undoing-project/</guid>
+      <description>&lt;p&gt;Michael Lewis is one of my favorite authors, and I typically look forward to his latest book. However, I was especially looking forward to &lt;a href=&#34;http://amzn.to/2kdfVMN&#34;&gt;The Undoing Project&lt;/a&gt; since it is a book about Daniel Kahneman and Amos Tversky. I became interested in behavioral economics&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:investing&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:investing&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;, a field Kahneman and Tversky revolutionized, after reading &lt;a href=&#34;http://amzn.to/2l4O6YC&#34;&gt;Misbehaving&lt;/a&gt; and &lt;a href=&#34;http://amzn.to/2l9AqaY&#34;&gt;The Little Book of Behavioral Investing&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The Undoing Project starts where &lt;a href=&#34;http://amzn.to/2jP3Ytr&#34;&gt;Moneyball&lt;/a&gt; left off, except this time with the story of the Houston Rockets General Manager Daryl Morey. After the first chapter, I was telling people The Undoing Project would be Lewis&amp;rsquo; best book yet. However, after finishing the book, I have a hard time recommending it to anyone who has read &lt;a href=&#34;http://amzn.to/2l9nTnP&#34;&gt;Thinking Fast and Slow&lt;/a&gt;&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:tfs&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:tfs&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;. The most interesting parts were the stories about Israel and how the conflicts (Six-Day War, Yom Kippur War, and others) affected Israeli citizens. Those stories made me want to read more about the history of Israel.&lt;/p&gt;
+
+&lt;p&gt;After listening to the &lt;a href=&#34;http://fivethirtyeight.com/features/nate-silver-interviews-michael-lewis-about-his-new-book-the-undoing-project/&#34;&gt;538 podcast with Michael Lewis&lt;/a&gt; my expectations were fairly high about the personal story in this book: the depth of the friendship between Kahneman and Tversky. I was surprised at the level of candor between the two friends, but I don&amp;rsquo;t think the book exactly matched my expectations. If you are a fan of Michael Lewis or if you are unfamiliar with the work by Kahneman and Tversky, I would still recommend reading this book. It is, after all, a work by Michael Lewis, the greatest nonfiction writer of our time. It may not rank with his best (&lt;a href=&#34;http://amzn.to/2jP3Ytr&#34;&gt;Moneyball&lt;/a&gt;, &lt;a href=&#34;http://amzn.to/2l4V0Nu&#34;&gt;Liar&amp;rsquo;s Poker&lt;/a&gt; or &lt;a href=&#34;http://amzn.to/2jM6BB3&#34;&gt;The Big Short&lt;/a&gt;) but it is still an enjoyable read.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:investing&#34;&gt;I used to think that personal investors could simply outperform the market by buying cheap (as measured by price/cash flow) and efficient (as measured by return on invested capital) companies. However, these days I believe buying undervalued stocks is a necessary condition, it is not a sufficient condition. Pyschological advantages are the sufficient conditions. I have read many books on Warren Buffett and his letters to shareholders. I have never seen him write about hard and fast valuation metrics. I will need to dig up the quote by &lt;a href=&#34;http://amzn.to/2k7UE4y&#34;&gt;Alice Schroeder&lt;/a&gt; but I think she claimed that he had written at least some metrics down for her but she couldn&amp;rsquo;t publish them until his death (&lt;em&gt;As I write that, it sounds like an alternative fact, so I could be imagining things&lt;/em&gt;). However, Buffett has written extensively about his pyschological advantages, and I believe that is the real source of his outperformance.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:investing&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:tfs&#34;&gt;Full disclaimer here: I read parts of Thinking Fast and Slow but not cover to cover, which I hope to do soon.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:tfs&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
