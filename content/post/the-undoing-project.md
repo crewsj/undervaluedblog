@@ -1,9 +1,16 @@
 +++
-draft = true
-date = "2017-01-31T21:35:41-05:00"
-title = "the undoing project"
-tags = ["books", "temp"]
-categories = ["books"]
+draft = false
+date = "2017-02-04T21:35:41-05:00"
+title = "The Undoing Project"
+tags = ["books"]
 +++
 
-Test
+Michael Lewis is one of my favorite authors, and I typically look forward to his latest book. However, I was especially looking forward to [The Undoing Project](http://amzn.to/2kdfVMN) since it is a book about Daniel Kahneman and Amos Tversky. I became interested in behavioral economics[^investing], a field Kahneman and Tversky revolutionized, after reading [Misbehaving](http://amzn.to/2l4O6YC) and [The Little Book of Behavioral Investing](http://amzn.to/2l9AqaY).
+
+The Undoing Project starts where [Moneyball](http://amzn.to/2jP3Ytr) left off, except this time with the story of the Houston Rockets General Manager Daryl Morey. After the first chapter, I was telling people The Undoing Project would be Lewis' best book yet. However, after finishing the book, I have a hard time recommending it to anyone who has read [Thinking Fast and Slow](http://amzn.to/2l9nTnP)[^tfs]. The most interesting parts were the stories about Israel and how the conflicts (Six-Day War, Yom Kippur War, and others) affected Israeli citizens. Those stories made me want to read more about the history of Israel.
+
+After listening to the [538 podcast with Michael Lewis](http://fivethirtyeight.com/features/nate-silver-interviews-michael-lewis-about-his-new-book-the-undoing-project/) my expectations were fairly high about the personal story in this book: the depth of the friendship between Kahneman and Tversky. I was surprised at the level of candor between the two friends, but I don't think the book exactly matched my expectations. If you are a fan of Michael Lewis or if you are unfamiliar with the work by Kahneman and Tversky, I would still recommend reading this book. It is, after all, a work by Michael Lewis, the greatest nonfiction writer of our time. It may not rank with his best ([Moneyball](http://amzn.to/2jP3Ytr), [Liar's Poker](http://amzn.to/2l4V0Nu) or [The Big Short](http://amzn.to/2jM6BB3)) but it is still an enjoyable read.
+
+[^investing]: I used to think that personal investors could simply outperform the market by buying cheap (as measured by price/cash flow) and efficient (as measured by return on invested capital) companies. However, these days I believe buying undervalued stocks is a necessary condition, it is not a sufficient condition. Pyschological advantages are the sufficient conditions. I have read many books on Warren Buffett and his letters to shareholders. I have never seen him write about hard and fast valuation metrics. I will need to dig up the quote by [Alice Schroeder](http://amzn.to/2k7UE4y) but I think she claimed that he had written at least some metrics down for her but she couldn't publish them until his death (*As I write that, it sounds like an alternative fact, so I could be imagining things*). However, Buffett has written extensively about his pyschological advantages, and I believe that is the real source of his outperformance.
+
+[^tfs]: Full disclaimer here: I read parts of Thinking Fast and Slow but not cover to cover, which I hope to do soon.

@@ -1,6 +1,6 @@
 +++
 date = "2017-01-30T21:37:12-05:00"
-title = "about this blog"
+title = "About This Blog"
 draft = false
 author = "me"
 +++

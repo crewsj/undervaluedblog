@@ -14,14 +14,20 @@ paginate = 5
     url = "/"
 	
 [[menu.main]]
-    name = "About"
+    name = "Books"
     weight = -130
+    identifier = "books"
+    url = "/tags/books"
+	
+[[menu.main]]
+    name = "About"
+    weight = -120
     identifier = "about"
     url = "/about/"
 	
 [[menu.main]]
     name = "Disclaimer"
-    weight = -120
+    weight = -110
     identifier = "disclaimer"
     url = "/disclaimer/"
 
