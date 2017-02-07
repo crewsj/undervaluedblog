@@ -5,7 +5,7 @@ date = "2017-02-05T13:32:50-05:00"
 
 +++
 
-From [Share Parrish](https://medium.com/the-mission/wtf-i-just-spent-1-207-40-on-books-6e5639e1f7bc#.1x9e30917)[^parrish]
+From [Shane Parrish](https://medium.com/the-mission/wtf-i-just-spent-1-207-40-on-books-6e5639e1f7bc#.1x9e30917)[^parrish]
 
 > Reading is not only the key to improving your lot in life, but it’s necessary if you want to develop insights, ideas, and understanding that sets you apart from others. You can’t however, **read what everyone else is reading**.
 

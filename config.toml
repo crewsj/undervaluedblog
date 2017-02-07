@@ -42,6 +42,7 @@ paginate = 10
     home = "undervalued"
 	# BrandImage = "http://blog.appernetic.io/images/apperneticlogo.png" #top header brand image.
 	BrandImage = ""
+	bing_verify_meta = "38697D97398E6960024EB10563DE138E"
 
 
 [params.theme]
