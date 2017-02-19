@@ -59,7 +59,7 @@
     },
     "datePublished": "2017-02-19",
     "description": "",
-    "wordCount":  593 
+    "wordCount":  625 
   }
 </script>
 
@@ -168,7 +168,7 @@
 
   <small>
   &middot; Read in about 3 min
-  &middot; (593 words)
+  &middot; (625 words)
 </small>
 
 
@@ -187,11 +187,11 @@
 </div>
 
       <div class="content">
-  <p>Since the election, a few people have made comments along the lines of <em>&ldquo;Trump will be good for stocks&rdquo;</em>. The implication is that Republican presidents are better for the stock market since they are generally viewed as being pro-business. It amazes me that this assumption is pervasive given stock market performance for the last three presidents. However, since I recently read <a href="/2017/02/the-undoing-project">The Undoing Project</a>, I was cognizant of any biases I may have and decided to look at the avialable data.</p>
+  <p>Since the election, a few people have made comments to me implying <em>Trump will be good for stocks</em><sup class="footnote-ref" id="fnref:trump"><a rel="footnote" href="#fn:trump">1</a></sup>. The implication is that Republican presidents are better for the stock market since they are generally viewed as being pro-business. It amazes me that this assumption is pervasive given stock market performance for the last three presidents (Clinton, Bush, Obama). However, since I recently read <a href="/2017/02/the-undoing-project">The Undoing Project</a>, I was cognizant of any biases I may have and decided to look at the available data.</p>
 
-<p>Before presenting the data, I should confess that I view this analysis as futile. I do not believe that one should make investing decisions solely based on the president (and <a href="https://www.nytimes.com/2017/02/13/upshot/its-probably-a-bad-idea-to-sell-stocks-because-you-fear-trump.html">others</a> agree). Nor do I believe that the president (or Congress) has much influence over the stock market<sup class="footnote-ref" id="fnref:fed"><a rel="footnote" href="#fn:fed">1</a></sup>. Many factors are out of the president&rsquo;s control. For example, President George W. Bush inherited a stock market bubble and left office in a deep bear market and recession<sup class="footnote-ref" id="fnref:bush"><a rel="footnote" href="#fn:bush">2</a></sup>.</p>
+<p>Before presenting the data, I should confess that I view this analysis as futile. I do not believe that one should make investing decisions solely based on the president (and <a href="https://www.nytimes.com/2017/02/13/upshot/its-probably-a-bad-idea-to-sell-stocks-because-you-fear-trump.html">others</a> agree). Nor do I believe that the president (or Congress) has much influence over the stock market<sup class="footnote-ref" id="fnref:fed"><a rel="footnote" href="#fn:fed">2</a></sup>. Many factors are out of the president&rsquo;s control. For example, President George W. Bush inherited a stock market bubble and left office in a deep bear market and recession<sup class="footnote-ref" id="fnref:bush"><a rel="footnote" href="#fn:bush">3</a></sup>.</p>
 
-<p>For stock market returns, I used the adjusted close of the S&amp;P500. <a href="http://finance.yahoo.com/quote/%5EGSPC?p=^GSPC">Yahoo</a> provides data through the Truman administration. The list of presidents and corresponding inauguration dates is available on <a href="https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States">Wikipedia</a>. The data and analysis are available as a Jupyter notebook<sup class="footnote-ref" id="fnref:jupyter"><a rel="footnote" href="#fn:jupyter">3</a></sup> on <a href="https://github.com/crewsj/data_analysis/blob/master/examples/stock_returns/presidential_returns.ipynb">github</a><sup class="footnote-ref" id="fnref:mistakes"><a rel="footnote" href="#fn:mistakes">4</a></sup>.</p>
+<p>For stock market returns, I used the adjusted close of the S&amp;P500. <a href="http://finance.yahoo.com/quote/%5EGSPC?p=^GSPC">Yahoo</a> provides data through the Truman administration. The list of presidents and corresponding inauguration dates is available on <a href="https://en.wikipedia.org/wiki/List_of_Presidents_of_the_United_States">Wikipedia</a>. The data and analysis are available as a Jupyter notebook<sup class="footnote-ref" id="fnref:jupyter"><a rel="footnote" href="#fn:jupyter">4</a></sup> on <a href="https://github.com/crewsj/data_analysis/blob/master/examples/stock_returns/presidential_returns.ipynb">github</a><sup class="footnote-ref" id="fnref:mistakes"><a rel="footnote" href="#fn:mistakes">5</a></sup>.</p>
 
 <p>Without further ado, the total and annualized return when each party controlled the presidency:</p>
 
@@ -227,20 +227,22 @@
 
 <p><img src="/images/annual_return_chrono.png" alt="annual return" title="annual return" /></p>
 
-<p>Ranking the results show just how much Clinton and Obama dominated<sup class="footnote-ref" id="fnref:dominated"><a rel="footnote" href="#fn:dominated">5</a></sup>. All the other Democratic presidents would have given you approximately at 3x return on your money, while Obama and Clinton added nearly another 10x on top of that.</p>
+<p>Ranking the results show just how much Clinton and Obama dominated<sup class="footnote-ref" id="fnref:dominated"><a rel="footnote" href="#fn:dominated">6</a></sup>. All the other Democratic presidents would have given you approximately at 3x return on your money, while Obama and Clinton added nearly another 10x on top of that.</p>
 
 <p><img src="/images/annual_return_ranked.png" alt="annual return ranked" title="annual return ranked" /></p>
 
-<p>Losing 40% during President George W. Bush&rsquo;s adminstration compared to 182% and 209% returns for Obama and Clinton, respectively, really hurt the Republicans<sup class="footnote-ref" id="fnref:rule"><a rel="footnote" href="#fn:rule">6</a></sup>. If we take out the last three presidents<sup class="footnote-ref" id="fnref:stupid"><a rel="footnote" href="#fn:stupid">7</a></sup>, the results are more even with a 6.48% annualized return for the Democrats and a 7.51% annualized return for the Republicans.</p>
+<p>Losing 40% during President George W. Bush&rsquo;s adminstration compared to 182% and 209% returns for Obama and Clinton, respectively, really hurt the Republicans<sup class="footnote-ref" id="fnref:rule"><a rel="footnote" href="#fn:rule">7</a></sup>. If we take out the last three presidents<sup class="footnote-ref" id="fnref:stupid"><a rel="footnote" href="#fn:stupid">8</a></sup>, the results are more even with a 6.48% annualized return for the Democrats and a 7.51% annualized return for the Republicans.</p>
 
-<p>The other interesting thing that stood out to me was George H. W. Bush&rsquo;s<sup class="footnote-ref" id="fnref:hwbush"><a rel="footnote" href="#fn:hwbush">8</a></sup> position in the rankings. He is the second best Republican and hardly deserves being remembered for losing to <a href="https://en.wikipedia.org/wiki/It%27s_the_economy,_stupid">&ldquo;It&rsquo;s the economy, stupid&rdquo;</a>.</p>
+<p>The other interesting thing that stood out to me was George H. W. Bush&rsquo;s<sup class="footnote-ref" id="fnref:hwbush"><a rel="footnote" href="#fn:hwbush">9</a></sup> position in the rankings. He is the second-best Republican (annualized return) and hardly deserves being remembered for losing to <a href="https://en.wikipedia.org/wiki/It%27s_the_economy,_stupid">&ldquo;It&rsquo;s the economy, stupid&rdquo;</a>.</p>
 
-<p>Perhaps I will look at other statistics such as unemployment rate, manufacturing indices, etc. I would also like to include the party controlling congress in the results. More to come&hellip;</p>
+<p>Perhaps I will look at other statistics such as unemployment rate, manufacturing indices, etc. I would also like to include the party controlling congress in the results. None of these results should be used to make investment decisions. More to come&hellip;</p>
 <div class="footnotes">
 
 <hr />
 
 <ol>
+<li id="fn:trump">The <a href="http://www.marketwatch.com/story/donald-trump-was-a-stock-market-disaster-2015-07-22">most relevant data point</a> always seems to be dismissed during these conversations. Fake news I guess.
+ <a class="footnote-return" href="#fnref:trump"><sup>[return]</sup></a></li>
 <li id="fn:fed">The Federal Reserve is a different matter&hellip;
  <a class="footnote-return" href="#fnref:fed"><sup>[return]</sup></a></li>
 <li id="fn:bush">I do not blame President Bush (or Republicans) for the Great Recession, financial crisis, whatever you want to call it. Many people would disagree with me, but Glass-Steagall was <a href="https://en.wikipedia.org/wiki/Gramm%E2%80%93Leach%E2%80%93Bliley_Act">repealed</a> on Clinton&rsquo;s watch. I don&rsquo;t blame President Clinton either.
