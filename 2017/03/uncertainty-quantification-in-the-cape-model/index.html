@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Uncertainty Quantification in the CAPE Model  &middot; Undervalued</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+<meta name="description" content="" />
+
+<meta name="keywords" content="">
+
+
+
+<meta name="msvalidate.01" content="38697D97398E6960024EB10563DE138E" />
+
+
+<meta property="og:title" content="Uncertainty Quantification in the CAPE Model  &middot; Undervalued ">
+<meta property="og:site_name" content="Undervalued"/>
+<meta property="og:url" content="http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model/" />
+<meta property="og:locale" content="en-us">
+
+
+<meta property="og:type" content="article" />
+<meta property="og:description" content=""/>
+<meta property="og:article:published_time" content="2017-03-04T12:34:30-05:00" />
+<meta property="og:article:modified_time" content="2017-03-04T12:34:30-05:00" />
+
+  
+
+  
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:site" content="@" />
+<meta name="twitter:creator" content="@" />
+<meta name="twitter:title" content="Uncertainty Quantification in the CAPE Model" />
+<meta name="twitter:description" content="" />
+<meta name="twitter:url" content="http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model/" />
+<meta name="twitter:domain" content="http://undervaluedblog.com/">
+  
+
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Article",
+    "headline": "Uncertainty Quantification in the CAPE Model",
+    "author": {
+      "@type": "Person",
+      "name": "http://profiles.google.com/+?rel=author"
+    },
+    "datePublished": "2017-03-04",
+    "description": "",
+    "wordCount":  1011 
+  }
+</script>
+
+
+
+<link rel="canonical" href="http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model/" />
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="/touch-icon-144-precomposed.png">
+<link rel="icon" href="/favicon.png">
+<meta name="generator" content="Hugo 0.18.1" />
+
+  <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.2/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+
+
+    <link rel="stylesheet" href="http://undervaluedblog.com/css/bootswatch/yeti/bootstrap.min.css">
+
+
+<link rel="stylesheet" href="http://undervaluedblog.com/css/font-awesome.min.css">
+<link rel="stylesheet" href="http://undervaluedblog.com/css/style.css">
+
+
+  <link rel="stylesheet" href="http://undervaluedblog.com/css/highlight/default.css">
+
+
+</head>
+<body class="map[name:yeti]" data-ng-app="myapp" data-ng-controller="MyController" data-ng-mouseleave="MouseLeave($event)">
+    <header id="main-header">
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        
+        <a class="navbar-brand" href="http://undervaluedblog.com/">
+          Undervalued
+          
+          
+          </a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            
+            
+            <li class="">
+
+              <a href="http://undervaluedblog.com/" >
+                
+                Home
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="http://undervaluedblog.com/tags/books" >
+                
+                Books
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="http://undervaluedblog.com/about/" >
+                
+                About
+              </a>
+            </li>
+            
+            <li class="">
+
+              <a href="http://undervaluedblog.com/disclaimer/" >
+                
+                Disclaimer
+              </a>
+            </li>
+            
+          </ul>
+        </div>
+        
+      </div>
+    </nav>
+  </header>
+
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-9">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+  <div class="text-center">
+
+    <h1>Uncertainty Quantification in the CAPE Model
+</h1>
+
+    <div class="metas">
+<small>
+  <i class="fa fa-calendar"></i>
+  <time datetime="2017-03-04">4 Mar, 2017</time>
+</small>
+
+
+  <small>
+  &middot; Read in about 5 min
+  &middot; (1011 words)
+</small>
+
+
+<div class="margin-10">
+
+</div>
+<br>
+</div>
+
+  </div>
+</div>
+
+      <div class="content">
+  <p>I have been looking for a reason to play around with <a href="http://dan.iel.fm/emcee/current/">emcee</a> and decided to use it to model the uncertainty in one of <a href="https://www.hussmanfunds.com/weeklyMarketComment.html">John Hussman&rsquo;s</a> models. Emcee is one of two main Markov Chain Monte Carlo (MCMC) python libraries<sup class="footnote-ref" id="fnref:pymc"><a rel="footnote" href="#fn:pymc">1</a></sup>. I have no intention of giving a detailed description on Bayesian inference, but MCMC is one popular Bayesian method to quantify model uncertainty<sup class="footnote-ref" id="fnref:mcmcbooks"><a rel="footnote" href="#fn:mcmcbooks">2</a></sup>.</p>
+
+<p>John Hussman is the type of mutual fund manager that I would want to be if I were a mutual fund manager. His <a href="https://www.hussmanfunds.com/weeklyMarketComment.html">weekly commentaries</a> are worth reading regulary in my opinion. Full disclaimer: I do not have money in any of Hussman&rsquo;s funds but that is a post for another day. Hussman has presented numerous models<sup class="footnote-ref" id="fnref:hussmanmodels"><a rel="footnote" href="#fn:hussmanmodels">3</a></sup> that he uses to predict forward 10-year annualized returns. Here I will use the <a href="https://www.hussmanfunds.com/wmc/wmc130218.htm">Shorthand Shiller Model</a>. The Shorthand Shiller Model predicts the forward 10-year return $p$ of the S&amp;P500 using</p>
+
+<p>$$p=(1+g)\left(\frac{\overline{C}}{C}\right)^{\frac{1}{10}} - 1 + d$$</p>
+
+<p>where $g$ is the growth in operating profits, $\overline{C}$ is the historical average for the <a href="http://www.econ.yale.edu/~shiller/data.htm">Cyclically Adjusted Price/Earnings</a> ratio, $C$ is the current CAPE ratio, and $d$ is the current dividend rate. Hussman uses $g=6.3%$, the historical growth rate in S&amp;P500 operating earnings, and $\overline{C} = 15$, the historical average for the CAPE. Below we can see actual realized 10-year returns versus the model predicted returns<sup class="footnote-ref" id="fnref:modelcomp"><a rel="footnote" href="#fn:modelcomp">4</a></sup>.</p>
+
+<p><img src="/images/hussman/shiller_cape_vs_actual.png" alt="annualized return return" title="10-year annualized return vs predicted" /></p>
+
+<p>The model generally follows the same trend and intuitively makes sense: long-term returns will be governed by growth in profits and valuation mean reversion. Clearly stock market returns are driven by more than that (especially in the short-term) but from a conceptual standpoint, I do not have any issues with the model. I mainly want to estimate the current predicted return using emcee. The model predicts a 10-year annualized return of 1.93% using a 2016 year-end CAPE of 27.93 and dividend rate of 2.03%. This is an absolutely abysmal annualized return for stocks. However, I have two issues with making investment decisions based on this single prediction<sup class="footnote-ref" id="fnref:pred"><a rel="footnote" href="#fn:pred">5</a></sup>:</p>
+
+<ol>
+<li>We have no idea if the credible interval for this predicted return is large or small. It would be one thing if 99% of the time the return was between 0-2%. It is quite another if the range of expected returns is 0-20%.</li>
+<li>Clearly the model has under-predicted returns for nearly 30 years.</li>
+</ol>
+
+<p>MCMC helps us address the first issue by quantifying the uncertainty in the model. For the second point, I imagine the model has under-predicted returns due to the 30 year bull-market in bonds and drop in interest rates. Below I plot the model error with the yield on the 10 year U.S. bond.</p>
+
+<p><img src="/images/hussman/model_error_w_interest_rate.png" alt="model error and yield rates" title="Model error and interest rates" /></p>
+
+<p>Maybe in another post I will include interest rates to improve the predictive power of the model, but for now, I just want to use emcee to quantify the model uncertainty. All code is available <a href="https://github.com/crewsj/data_analysis/blob/master/examples/stock_returns/future_returns.ipynb">here</a>.</p>
+
+<p>Instead of using fixed estimates for $g$ and $\overline{C}$, I estimate their marginal probability density functions (PDFs) using emcee<sup class="footnote-ref" id="fnref:var"><a rel="footnote" href="#fn:var">6</a></sup>, shown here using histograms of the emcee output:</p>
+
+<p><img src="/images/hussman/g_pdf.png" alt="growth rate PDF" title="PDF for the growth rate" />
+<img src="/images/hussman/cape_pdf.png" alt="mean CAPE PDF" title="PDF for the CAPE" /></p>
+
+<p>The histograms show just how much uncertainty is in the model parameters. The corner plot also shows the relationship between the two parameters in the joint probability density function.</p>
+
+<p><img src="/images/hussman/corner.png" alt="corner plot" title="corner plot" /></p>
+
+<p>It doesn&rsquo;t require genius or MCMC to notice the dependency in a model that is proportonal to $g \times \overline{C}^{\frac{1}{10}}$.</p>
+
+<p>Using the estimates for the PDFs we can visualize the model uncertainty with the 50% and 95% credible intervals:</p>
+
+<p><img src="/images/hussman/CI.png" alt="model output" title="model output and credible intervals" /></p>
+
+<p>Finally, we can visualize the histogram for current predicted 10-year annualized returns.</p>
+
+<p><img src="/images/hussman/hist_of_current_pred.png" alt="histogram of current model predictions" title="histogram of current model predictions" /></p>
+
+<p>This gives a better idea of expected 10-year annualized returns given the current (elevated) CAPE. The 50% credible interval is (-1.98%, 7.04%) &ndash; somewhere between abysmal and ok. The 95% credible interval is (-10.66%, 17.02%). This means that you have a 2.5% chance of losing more than 67% of your investment over the next 10 years (the total return for a -10.66% ten-year annualized return). The median return is 2.42%, slightly higher than the estimation using Hussman&rsquo;s parameters.</p>
+
+<p>So what does this show besides the fact that <a href="http://pandas.pydata.org/">pandas</a> and emcee are awesome? Not much really. As an investor&hellip; well I don&rsquo;t care much for index funds anyway so I don&rsquo;t get too hung up on overall market predictions. The only thing this shows is how uncertain markets are and the dangers of investing at elevated valuations &ndash; neither insights require Bayesian inference. Investing is not about a single option though; investing is about evaluating opportunities and tradeoffs in terms of risk and return. Other liquid options (namely cash and bonds) currently offer low returns as well. The one key takeway from Hussman&rsquo;s model and its current prediction for poor 10-year returns is to save more. If you are saving for a young child&rsquo;s college, plan for 2% returns for 10 years and then 6-7% after that. I wouldn&rsquo;t hinge my saving plans on earning 6-7% equity returns for 20 years.</p>
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']],
+    displayMath: [['$$','$$']],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: ['script', 'noscript', 'style', 'textarea', 'pre'],
+    TeX: { equationNumbers: { autoNumber: "AMS" },
+         extensions: ["AMSmath.js", "AMSsymbols.js"] }
+  }
+});
+</script>
+
+<script type="text/x-mathjax-config">
+  MathJax.Hub.Queue(function() {
+    // Fix <code> tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';
+    }
+});
+</script>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:pymc">The other is <a href="http://pymc-devs.github.io/pymc/">pymc</a>.
+ <a class="footnote-return" href="#fnref:pymc"><sup>[return]</sup></a></li>
+<li id="fn:mcmcbooks">For a detailed description, simply bing it. I have also started reading <a href="http://amzn.to/2lqsQgx">Bayesian Methods for Hackers</a> but I haven&rsquo;t read enough to recommend it yet. I can recommend my former post-doc advisor&rsquo;s book on <a href="http://amzn.to/2lITk8m">uncertainty quantification</a>.
+ <a class="footnote-return" href="#fnref:mcmcbooks"><sup>[return]</sup></a></li>
+<li id="fn:hussmanmodels">See <a href="https://www.hussmanfunds.com/wmc/wmc130218.htm">here</a> and <a href="https://www.hussmanfunds.com/wmc/wmc140414.htm">here</a>.
+ <a class="footnote-return" href="#fnref:hussmanmodels"><sup>[return]</sup></a></li>
+<li id="fn:modelcomp">If you compare closely my output to <a href="https://www.hussmanfunds.com/wmc/wmc130318a.gif">Hussman&rsquo;s</a> you will notice the actual returns that I have plotted seem to be off by about 1% on the high end and the low end. I use <a href="http://www.econ.yale.edu/~shiller/data.htm">Shiller&rsquo;s original data</a> but do not include the reinvestment of dividends (which I should have) since the goal here was mainly to play around with emcee.
+ <a class="footnote-return" href="#fnref:modelcomp"><sup>[return]</sup></a></li>
+<li id="fn:pred">Besides the fact that I have issues with making investment decisions based on any <em>single</em> prediction.
+ <a class="footnote-return" href="#fnref:pred"><sup>[return]</sup></a></li>
+<li id="fn:var">Note that I did not sample the variance, which I should have.
+ <a class="footnote-return" href="#fnref:var"><sup>[return]</sup></a></li>
+</ol>
+</div>
+
+</div>
+
+
+      <footer>
+  <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      
+  
+    <nav><ul class="pager">
+    
+        <li class="previous">
+          <a href="http://undervaluedblog.com/2017/02/stock-market-returns-based-on-presidential-party/" title="Stock Market Returns Based on Presidential Party">
+            <span aria-hidden="true">&larr;</span>Previous
+          </a>
+        </li>
+    
+
+    
+    </ul> </nav>
+  
+
+
+</div>
+
+  <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9">
+  
+
+</div>
+
+</footer>
+
+    </div>
+    
+      <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3">
+        <div>
+  
+
+    <div class="section">
+      <header><div class="title"><b>Latest Posts</b></div></header>
+      <div class="content">
+        <ul>
+        
+          <li>
+          <a href="http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model/">Uncertainty Quantification in the CAPE Model</a>
+          </li>
+        
+          <li>
+          <a href="http://undervaluedblog.com/2017/02/stock-market-returns-based-on-presidential-party/">Stock Market Returns Based on Presidential Party</a>
+          </li>
+        
+          <li>
+          <a href="http://undervaluedblog.com/2017/02/reading-what-everyone-else-is-reading/">Reading What Everyone Else is Reading</a>
+          </li>
+        
+          <li>
+          <a href="http://undervaluedblog.com/2017/02/the-undoing-project/">The Undoing Project</a>
+          </li>
+        
+          <li>
+          <a href="http://undervaluedblog.com/2017/02/malcolm-gladwell-on-freakonomics-radio/">Malcolm Gladwell on Freakonomics Radio</a>
+          </li>
+        
+          <li>
+          <a href="http://undervaluedblog.com/2017/01/about-this-blog/">About This Blog</a>
+          </li>
+        
+        </ul>
+      </div>
+    </div>
+
+    
+      
+      
+    
+      
+      
+      <div class="section taxonomies">
+        <header><div class="title"><b>tag</b></div></header>
+
+        <div class="content">
+          <ul>
+            <li><a href="/tags/books">books</a></li><li><a href="/tags/finance">finance</a></li><li><a href="/tags/podcasts">podcasts</a></li>
+          </ul>
+        </div>
+      </div>
+      
+    
+	<div class="section">
+      <div class="content" style="width:200px">
+			<script src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=1bb546e8-5040-411b-838e-540735baea5e"></script>
+      </div>
+    </div>
+</div>
+
+      </div>
+    
+  </div>
+</div>
+      
+<footer class="footer hidden-print">
+  <div class="container">
+    <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+           <div class="pull-left">
+  <a class="toplink" href="javascript:" id="return-to-top">back to top</a>
+</div>
+<div class="pull-right">
+
+</div>
+
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
+              
+    
+<div class="container footline">
+    <small>
+</small>
+</div>
+
+
+    
+<div class="container copyright">
+    <small>
+  &copy; 2017
+
+  </small>
+</div>
+
+
+
+        </div>
+    </div>
+  </div>
+</footer>
+
+    
+
+<script src="http://undervaluedblog.com/js/jquery.min.js"></script>
+<script src="http://undervaluedblog.com/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+<script src="/js/popover/angular-storage.min.js"></script>
+
+
+
+<script src="http://undervaluedblog.com/js/highlight.pack.js"></script>
+<script src="http://undervaluedblog.com/js/site.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+<script>
+var ENABLE_POPOVER = ""; 
+var EXPIRE_COOKIE = ""; 
+var SHOW_MODAL_TIMEOUT = ""; 
+var MOUSE_LEAVE = ""; 
+var MODAL_SIZE = ""; 
+var POST_URL = ""; 
+var SIGNUP_HEADER = "";
+var HEADER_IMAGE = "";
+var IMG_DESCRIPTION = "";
+var SIGNUP_TEXT = "";
+var INPUT_PLACEHOLDER = "";
+var SUBMIT_BUTTON = "";
+var SUCCESS_MESSAGE = "";
+var ERROR_MESSAGE = "";
+var OPTIN = "";
+var COOKIE_NAME = "";
+</script>
+<script src="/js/popover/angular-modal-service.min.js"></script>
+<script src="/js/angular-ismobile.min.js"></script>
+<script src="/js/popover/popover.min.js"></script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-91592007-1', 'auto');
+  ga('send', 'pageview');
+
+</script>
+<script type="text/javascript" async
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+  </body>
+</html>
+

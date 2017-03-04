@@ -7,8 +7,107 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2017</copyright>
-    <lastBuildDate>Sun, 19 Feb 2017 13:52:56 -0500</lastBuildDate>
+    <lastBuildDate>Sat, 04 Mar 2017 12:34:30 -0500</lastBuildDate>
     <atom:link href="http://undervaluedblog.com/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Uncertainty Quantification in the CAPE Model</title>
+      <link>http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model/</link>
+      <pubDate>Sat, 04 Mar 2017 12:34:30 -0500</pubDate>
+      
+      <guid>http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model/</guid>
+      <description>&lt;p&gt;I have been looking for a reason to play around with &lt;a href=&#34;http://dan.iel.fm/emcee/current/&#34;&gt;emcee&lt;/a&gt; and decided to use it to model the uncertainty in one of &lt;a href=&#34;https://www.hussmanfunds.com/weeklyMarketComment.html&#34;&gt;John Hussman&amp;rsquo;s&lt;/a&gt; models. Emcee is one of two main Markov Chain Monte Carlo (MCMC) python libraries&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:pymc&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:pymc&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. I have no intention of giving a detailed description on Bayesian inference, but MCMC is one popular Bayesian method to quantify model uncertainty&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:mcmcbooks&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:mcmcbooks&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;John Hussman is the type of mutual fund manager that I would want to be if I were a mutual fund manager. His &lt;a href=&#34;https://www.hussmanfunds.com/weeklyMarketComment.html&#34;&gt;weekly commentaries&lt;/a&gt; are worth reading regulary in my opinion. Full disclaimer: I do not have money in any of Hussman&amp;rsquo;s funds but that is a post for another day. Hussman has presented numerous models&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:hussmanmodels&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:hussmanmodels&#34;&gt;3&lt;/a&gt;&lt;/sup&gt; that he uses to predict forward 10-year annualized returns. Here I will use the &lt;a href=&#34;https://www.hussmanfunds.com/wmc/wmc130218.htm&#34;&gt;Shorthand Shiller Model&lt;/a&gt;. The Shorthand Shiller Model predicts the forward 10-year return $p$ of the S&amp;amp;P500 using&lt;/p&gt;
+
+&lt;p&gt;$$p=(1+g)\left(\frac{\overline{C}}{C}\right)^{\frac{1}{10}} - 1 + d$$&lt;/p&gt;
+
+&lt;p&gt;where $g$ is the growth in operating profits, $\overline{C}$ is the historical average for the &lt;a href=&#34;http://www.econ.yale.edu/~shiller/data.htm&#34;&gt;Cyclically Adjusted Price/Earnings&lt;/a&gt; ratio, $C$ is the current CAPE ratio, and $d$ is the current dividend rate. Hussman uses $g=6.3%$, the historical growth rate in S&amp;amp;P500 operating earnings, and $\overline{C} = 15$, the historical average for the CAPE. Below we can see actual realized 10-year returns versus the model predicted returns&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:modelcomp&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:modelcomp&#34;&gt;4&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/hussman/shiller_cape_vs_actual.png&#34; alt=&#34;annualized return return&#34; title=&#34;10-year annualized return vs predicted&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The model generally follows the same trend and intuitively makes sense: long-term returns will be governed by growth in profits and valuation mean reversion. Clearly stock market returns are driven by more than that (especially in the short-term) but from a conceptual standpoint, I do not have any issues with the model. I mainly want to estimate the current predicted return using emcee. The model predicts a 10-year annualized return of 1.93% using a 2016 year-end CAPE of 27.93 and dividend rate of 2.03%. This is an absolutely abysmal annualized return for stocks. However, I have two issues with making investment decisions based on this single prediction&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:pred&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:pred&#34;&gt;5&lt;/a&gt;&lt;/sup&gt;:&lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;We have no idea if the credible interval for this predicted return is large or small. It would be one thing if 99% of the time the return was between 0-2%. It is quite another if the range of expected returns is 0-20%.&lt;/li&gt;
+&lt;li&gt;Clearly the model has under-predicted returns for nearly 30 years.&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;MCMC helps us address the first issue by quantifying the uncertainty in the model. For the second point, I imagine the model has under-predicted returns due to the 30 year bull-market in bonds and drop in interest rates. Below I plot the model error with the yield on the 10 year U.S. bond.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/hussman/model_error_w_interest_rate.png&#34; alt=&#34;model error and yield rates&#34; title=&#34;Model error and interest rates&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Maybe in another post I will include interest rates to improve the predictive power of the model, but for now, I just want to use emcee to quantify the model uncertainty. All code is available &lt;a href=&#34;https://github.com/crewsj/data_analysis/blob/master/examples/stock_returns/future_returns.ipynb&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Instead of using fixed estimates for $g$ and $\overline{C}$, I estimate their marginal probability density functions (PDFs) using emcee&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:var&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:var&#34;&gt;6&lt;/a&gt;&lt;/sup&gt;, shown here using histograms of the emcee output:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/hussman/g_pdf.png&#34; alt=&#34;growth rate PDF&#34; title=&#34;PDF for the growth rate&#34; /&gt;
+&lt;img src=&#34;http://undervaluedblog.com/images/hussman/cape_pdf.png&#34; alt=&#34;mean CAPE PDF&#34; title=&#34;PDF for the CAPE&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;The histograms show just how much uncertainty is in the model parameters. The corner plot also shows the relationship between the two parameters in the joint probability density function.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/hussman/corner.png&#34; alt=&#34;corner plot&#34; title=&#34;corner plot&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;It doesn&amp;rsquo;t require genius or MCMC to notice the dependency in a model that is proportonal to $g \times \overline{C}^{\frac{1}{10}}$.&lt;/p&gt;
+
+&lt;p&gt;Using the estimates for the PDFs we can visualize the model uncertainty with the 50% and 95% credible intervals:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/hussman/CI.png&#34; alt=&#34;model output&#34; title=&#34;model output and credible intervals&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Finally, we can visualize the histogram for current predicted 10-year annualized returns.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/hussman/hist_of_current_pred.png&#34; alt=&#34;histogram of current model predictions&#34; title=&#34;histogram of current model predictions&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;This gives a better idea of expected 10-year annualized returns given the current (elevated) CAPE. The 50% credible interval is (-1.98%, 7.04%) &amp;ndash; somewhere between abysmal and ok. The 95% credible interval is (-10.66%, 17.02%). This means that you have a 2.5% chance of losing more than 67% of your investment over the next 10 years (the total return for a -10.66% ten-year annualized return). The median return is 2.42%, slightly higher than the estimation using Hussman&amp;rsquo;s parameters.&lt;/p&gt;
+
+&lt;p&gt;So what does this show besides the fact that &lt;a href=&#34;http://pandas.pydata.org/&#34;&gt;pandas&lt;/a&gt; and emcee are awesome? Not much really. As an investor&amp;hellip; well I don&amp;rsquo;t care much for index funds anyway so I don&amp;rsquo;t get too hung up on overall market predictions. The only thing this shows is how uncertain markets are and the dangers of investing at elevated valuations &amp;ndash; neither insights require Bayesian inference. Investing is not about a single option though; investing is about evaluating opportunities and tradeoffs in terms of risk and return. Other liquid options (namely cash and bonds) currently offer low returns as well. The one key takeway from Hussman&amp;rsquo;s model and its current prediction for poor 10-year returns is to save more. If you are saving for a young child&amp;rsquo;s college, plan for 2% returns for 10 years and then 6-7% after that. I wouldn&amp;rsquo;t hinge my saving plans on earning 6-7% equity returns for 20 years.&lt;/p&gt;
+
+&lt;script type=&#34;text/x-mathjax-config&#34;&gt;
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [[&#39;$&#39;,&#39;$&#39;], [&#39;\\(&#39;,&#39;\\)&#39;]],
+    displayMath: [[&#39;$$&#39;,&#39;$$&#39;]],
+    processEscapes: true,
+    processEnvironments: true,
+    skipTags: [&#39;script&#39;, &#39;noscript&#39;, &#39;style&#39;, &#39;textarea&#39;, &#39;pre&#39;],
+    TeX: { equationNumbers: { autoNumber: &#34;AMS&#34; },
+         extensions: [&#34;AMSmath.js&#34;, &#34;AMSsymbols.js&#34;] }
+  }
+});
+&lt;/script&gt;
+
+&lt;script type=&#34;text/x-mathjax-config&#34;&gt;
+  MathJax.Hub.Queue(function() {
+    // Fix &lt;code&gt; tags after MathJax finishes running. This is a
+    // hack to overcome a shortcoming of Markdown. Discussion at
+    // https://github.com/mojombo/jekyll/issues/199
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i = 0; i &lt; all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += &#39; has-jax&#39;;
+    }
+});
+&lt;/script&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:pymc&#34;&gt;The other is &lt;a href=&#34;http://pymc-devs.github.io/pymc/&#34;&gt;pymc&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:pymc&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:mcmcbooks&#34;&gt;For a detailed description, simply bing it. I have also started reading &lt;a href=&#34;http://amzn.to/2lqsQgx&#34;&gt;Bayesian Methods for Hackers&lt;/a&gt; but I haven&amp;rsquo;t read enough to recommend it yet. I can recommend my former post-doc advisor&amp;rsquo;s book on &lt;a href=&#34;http://amzn.to/2lITk8m&#34;&gt;uncertainty quantification&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:mcmcbooks&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:hussmanmodels&#34;&gt;See &lt;a href=&#34;https://www.hussmanfunds.com/wmc/wmc130218.htm&#34;&gt;here&lt;/a&gt; and &lt;a href=&#34;https://www.hussmanfunds.com/wmc/wmc140414.htm&#34;&gt;here&lt;/a&gt;.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:hussmanmodels&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:modelcomp&#34;&gt;If you compare closely my output to &lt;a href=&#34;https://www.hussmanfunds.com/wmc/wmc130318a.gif&#34;&gt;Hussman&amp;rsquo;s&lt;/a&gt; you will notice the actual returns that I have plotted seem to be off by about 1% on the high end and the low end. I use &lt;a href=&#34;http://www.econ.yale.edu/~shiller/data.htm&#34;&gt;Shiller&amp;rsquo;s original data&lt;/a&gt; but do not include the reinvestment of dividends (which I should have) since the goal here was mainly to play around with emcee.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:modelcomp&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:pred&#34;&gt;Besides the fact that I have issues with making investment decisions based on any &lt;em&gt;single&lt;/em&gt; prediction.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:pred&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:var&#34;&gt;Note that I did not sample the variance, which I should have.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:var&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Stock Market Returns Based on Presidential Party</title>
