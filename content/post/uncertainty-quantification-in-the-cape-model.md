@@ -2,7 +2,7 @@
 draft = false
 date = "2017-03-04T12:34:30-05:00"
 title = "Uncertainty Quantification in the CAPE Model"
-
+tags =["finance", "uncertainty quantification"]
 +++
 
 I have been looking for a reason to play around with [emcee](http://dan.iel.fm/emcee/current/) and decided to use it to model the uncertainty in one of [John Hussman's](https://www.hussmanfunds.com/weeklyMarketComment.html) models. Emcee is one of two main Markov Chain Monte Carlo (MCMC) python libraries[^pymc]. I have no intention of giving a detailed description on Bayesian inference, but MCMC is one popular Bayesian method to quantify model uncertainty[^mcmcbooks].

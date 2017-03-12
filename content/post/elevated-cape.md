@@ -2,7 +2,7 @@
 date = "2017-03-12T12:50:33-04:00"
 title = "Elevated CAPE"
 draft = false
-
+tags = ["finance"]
 +++
 
 Speaking of an [elevated CAPE](/2017/03/uncertainty-quantification-in-the-cape-model), there were two articles that crossed my radar this week[^credit]. From [Bloomberg](https://www.bloomberg.com/view/articles/2017-03-03/what-to-make-of-these-twice-in-history-s-p-500-valuations):
@@ -19,7 +19,7 @@ or buying calls:
 
 I am not a big fan of selling puts at elevated price levels with the VIX below 12. 
 
-![current VIX](/images/elevated_cape/vix.png "Current VIX")
+![current VIX](/images/elevated_cape/vix.PNG "Current VIX")
 
 I would only ever sell cash secured puts, which means you may be able to earn 6% on the cash with the risk that someone puts you the stock (at still elevated levels). I would much rather sell puts during a panic when premiums are high. With that strategy you have two ways to make money: stock prices rise or premiums drop and you buy back the put. If I am ambivalent about selling a stock I own at these levels, I would rather write covered calls. That way you earn a few extra percent and the worst thing that happens is the stock gets called away[^drop].
 
