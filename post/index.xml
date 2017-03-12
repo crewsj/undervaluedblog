@@ -7,8 +7,51 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>(c) 2017</copyright>
-    <lastBuildDate>Sat, 04 Mar 2017 12:34:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 12 Mar 2017 12:50:33 -0400</lastBuildDate>
     <atom:link href="http://undervaluedblog.com/post/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Elevated CAPE</title>
+      <link>http://undervaluedblog.com/2017/03/elevated-cape/</link>
+      <pubDate>Sun, 12 Mar 2017 12:50:33 -0400</pubDate>
+      
+      <guid>http://undervaluedblog.com/2017/03/elevated-cape/</guid>
+      <description>&lt;p&gt;Speaking of an &lt;a href=&#34;http://undervaluedblog.com/2017/03/uncertainty-quantification-in-the-cape-model&#34;&gt;elevated CAPE&lt;/a&gt;, there were two articles that crossed my radar this week&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:credit&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:credit&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;. From &lt;a href=&#34;https://www.bloomberg.com/view/articles/2017-03-03/what-to-make-of-these-twice-in-history-s-p-500-valuations&#34;&gt;Bloomberg&lt;/a&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Let’s start with the bad news. The two times the CAPE ratio reached these levels, doom followed in the stock market. In 1929, it only stayed above 30 for about two months until Black Tuesday sparked a crash that sent stocks tumbling more than 80 percent from their peak. It happened again in mid-1997, but stocks and valuations continued to rise. The ratio eventually rose above 44 in late-1999 and stocks ran up almost 85 percent before eventually losing half their value by 2002 after the technology bubble burst.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Steven Sears at &lt;a href=&#34;http://www.barrons.com/articles/how-to-profit-from-stock-rallies-while-limiting-risk-1489088690&#34;&gt;Barron&amp;rsquo;s&lt;/a&gt; recommends selling puts:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;To reshape the risk of buying stocks at these high levels, investors can use two elementary options strategies. By selling puts on stocks investors would like to own, it is possible to get paid by the options market just for agreeing to buy stock at a lower price.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;or buying calls:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p&gt;Investors who want immediate exposure to the stock market’s potential advance can just buy bullish call options as proxies for stocks. Calls cost less than the price of stocks, and enable investors to participate in any rallies while limiting risk.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;I am not a big fan of selling puts at elevated price levels with the VIX below 12.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&#34;http://undervaluedblog.com/images/elevated_cape/vix.png&#34; alt=&#34;current VIX&#34; title=&#34;Current VIX&#34; /&gt;&lt;/p&gt;
+
+&lt;p&gt;I would only ever sell cash secured puts, which means you may be able to earn 6% on the cash with the risk that someone puts you the stock (at still elevated levels). I would much rather sell puts during a panic when premiums are high. With that strategy you have two ways to make money: stock prices rise or premiums drop and you buy back the put. If I am ambivalent about selling a stock I own at these levels, I would rather write covered calls. That way you earn a few extra percent and the worst thing that happens is the stock gets called away&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:drop&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:drop&#34;&gt;2&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:credit&#34;&gt;And zero credit given.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:credit&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;li id=&#34;fn:drop&#34;&gt;Some people would say the worst thing that happens is that the price drops on a stock you own, but I view that as the best thing. Buy more at a discount.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:drop&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
     
     <item>
       <title>Uncertainty Quantification in the CAPE Model</title>
