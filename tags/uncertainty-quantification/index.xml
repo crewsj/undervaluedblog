@@ -91,7 +91,7 @@ MathJax.Hub.Config({
 &lt;hr /&gt;
 
 &lt;ol&gt;
-&lt;li id=&#34;fn:pymc&#34;&gt;The other is &lt;a href=&#34;http://pymc-devs.github.io/pymc/&#34;&gt;pymc&lt;/a&gt;.
+&lt;li id=&#34;fn:pymc&#34;&gt;The other is &lt;a href=&#34;http://pymc-devs.github.io/pymc/&#34;&gt;pymc&lt;/a&gt;. 
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:pymc&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
 &lt;li id=&#34;fn:mcmcbooks&#34;&gt;For a detailed description, simply bing it. I have also started reading &lt;a href=&#34;http://amzn.to/2lqsQgx&#34;&gt;Bayesian Methods for Hackers&lt;/a&gt; but I haven&amp;rsquo;t read enough to recommend it yet. I can recommend my former post-doc advisor&amp;rsquo;s book on &lt;a href=&#34;http://amzn.to/2lITk8m&#34;&gt;uncertainty quantification&lt;/a&gt;.
  &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:mcmcbooks&#34;&gt;&lt;sup&gt;[return]&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
